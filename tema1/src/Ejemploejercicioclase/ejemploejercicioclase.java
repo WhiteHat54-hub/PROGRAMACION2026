@@ -12,6 +12,6 @@ void main() {
 
 System.out.println("la suma es " + suma);
 System.out.println("la resta es " + resta);
-System.out.println("la multiplicación es ") + ;
-System.out.println("la división es " + );
+System.out.println("la multiplicación es " + multiplicacion) ;
+System.out.println("la división es " + division);
 }
