@@ -1,4 +1,2 @@
-package PACKAGE_NAME;
-
-public class buclesejercicio1 {
-}
+import java.util.Scanner;
+public class buclesejercicio1 {}
