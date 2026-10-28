@@ -1,31 +1,37 @@
+//leer entero positivo (String mensaje)
+//leerDouble (String mensaje)
+//leerEnteroEnRango (String mensaje, int min, int max)
+//leerCaracter (String mensaje)
+//leerCaracter(String mensaje)
+//leerSiNo(String mensaje)
+
+//leer entero positivo (String mensaje)
 
 import java.util.Scanner;
 
 public class MiEntradaSalida {
 
-    public static String leerCadena(String mensaje) {
+    public static int leerNumeroEnteroPositivo(String mensaje) {
+
         Scanner sc = new Scanner(System.in);
-        System.out.printf("%s: ", mensaje);
-        return sc.nextLine();
+        System.out.println(mensaje);
+        int leerNumeroEnteroPositivo;
+        leerNumeroEnteroPositivo = Integer.parseInt(sc.nextLine());
+        return leerNumeroEnteroPositivo;
     }
 
-    public static int leerEnteros(String mensaje) {
-        Scanner sc = new Scanner(System.in);
-        int num;
-
-        do {
-            System.out.printf("%s: ", mensaje);
-            num = Integer.parseInt(sc.nextLine());
-        } while (num <= 0);
-
-        return num;
+    static void main(String[] args) {
+        int n = leerNumeroEnteroPositivo("Introduce un número");
     }
 
-    public static void main(String[] args) {
-        String nombre = leerCadena("¿Cómo te llamas?");
-        System.out.println("Hola " + nombre);
+    //leerDouble (String mensaje)
+    public static double leerDouble(String mensaje) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println(mensaje);
 
-        int numero = leerEnteros("Introduce un número positivo");
-        System.out.println("Has introducido: " + numero);
+        double leerDouble;
+        leerDouble = Double.parseDouble(sc.nextLine());
+
+        return leerDouble;
     }
 }
