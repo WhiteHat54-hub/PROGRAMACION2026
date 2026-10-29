@@ -11,6 +11,5 @@ public class miArray {
             System.out.println(miArray[i]);
 
         }
-
     }
 }
